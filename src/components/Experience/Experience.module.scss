@@ -1,11 +1,13 @@
 .experience {
-  // @extend .section;
+  // max-width: 1200px;
+  // margin: 0 auto;
+  // padding: 80px 24px;
 }
 
 .title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .card {
@@ -14,6 +16,18 @@
   border: 1px solid #1f2933;
   border-radius: 8px;
   background: #0f172a;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+/* Header row */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .role {
@@ -22,11 +36,56 @@
   color: #e5e7eb;
 }
 
+.timeline {
+  font-size: 13px;
+  color: #9ca3af;
+  white-space: nowrap;
+}
+
 .meta {
   display: block;
   margin-top: 6px;
   font-size: 14px;
   color: #9ca3af;
+}
+
+/* Impact bullets */
+.impacts {
+  margin-top: 16px;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #cbd5f5;
+
+  li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+  }
+}
+
+.metaRight {
+  font-size: 13px;
+  color: #9ca3af;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Location (desktop only) */
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #9ca3af;
+}
+
+/* Future: remote / hybrid tag */
+.workMode {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #1f2933;
+  color: #cbd5f5;
 }
 
 /* Responsive */
@@ -39,7 +98,12 @@
     font-size: 24px;
   }
 
-  .card {
-    padding: 20px;
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .location {
+    display: none;
   }
 }

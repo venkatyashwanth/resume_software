@@ -21,8 +21,23 @@ export const metadata = {
         type: "image/svg+xml",
       }
     ]
-
-  }
+  },
+  openGraph: {
+    title: "Venkat Yashwanth | Frontend Developer",
+    description:
+      "Frontend Developer specializing in React and Next.js, with experience building accessible, scalable, production-ready user interfaces.",
+    url: "https://resume-mvyashwanth92.netlify.app/",
+    siteName: "Venkat Yashwanth Portfolio",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Venkat Yashwanth Portfolio",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

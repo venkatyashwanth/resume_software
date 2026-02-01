@@ -1,0 +1,71 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0b0b0f" />
+
+  <!-- Accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="#60a5fa" />
+
+  <!-- Content -->
+  <g transform="translate(120, 160)">
+    <!-- Name -->
+    <text
+      x="0"
+      y="0"
+      font-size="52"
+      font-weight="700"
+      fill="#e5e7eb"
+      font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    >
+      Venkat Yashwanth
+    </text>
+
+    <!-- Role -->
+    <text
+      x="0"
+      y="52"
+      font-size="26"
+      font-weight="500"
+      fill="#60a5fa"
+      font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    >
+      Frontend Developer | React | Next.js
+    </text>
+
+    <!-- Description -->
+    <text
+      x="0"
+      y="110"
+      font-size="22"
+      fill="#9ca3af"
+      font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    >
+      Building accessible, scalable, production-ready
+    </text>
+    <text
+      x="0"
+      y="142"
+      font-size="22"
+      fill="#9ca3af"
+      font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    >
+      user interfaces for real-world applications.
+    </text>
+
+    <!-- Tech stack pills -->
+    <g transform="translate(0, 190)">
+      <rect x="0" y="0" rx="16" ry="16" width="90" height="32" fill="#111827" stroke="#1f2933" />
+      <text x="20" y="22" font-size="14" fill="#60a5fa">React</text>
+
+      <rect x="110" y="0" rx="16" ry="16" width="110" height="32" fill="#111827" stroke="#1f2933" />
+      <text x="130" y="22" font-size="14" fill="#60a5fa">Next.js</text>
+
+      <rect x="240" y="0" rx="16" ry="16" width="90" height="32" fill="#111827" stroke="#1f2933" />
+      <text x="260" y="22" font-size="14" fill="#60a5fa">SCSS</text>
+    </g>
+  </g>
+</svg>
