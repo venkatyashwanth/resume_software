@@ -33,7 +33,7 @@ export default function Hero() {
                     <a href="#projects" className={styles.primaryBtn}>
                         View Projects
                     </a>
-                    <a href="/resume.pdf" className={styles.secondaryBtn}>
+                    <a href="/Resume_2026.pdf" target="_blank" className={styles.secondaryBtn}>
                         Download Resume
                     </a>
                 </div>
