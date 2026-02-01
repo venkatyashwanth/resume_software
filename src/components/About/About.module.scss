@@ -1,0 +1,31 @@
+.about {
+  // @extend .section;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.description {
+  max-width: 720px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #9ca3af;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about {
+    // padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
