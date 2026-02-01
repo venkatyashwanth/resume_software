@@ -7,7 +7,7 @@ export default function About() {
                 Frontend Developer with 4 years of experience working in enterprise
                 environments such as NW18 (MoneyControl) and Sony Pictures Network.
                 My core strength lies in building clean UI, interactive components,
-                and collaborating with React teams. Most of my advanced React
+                and scalable web applications,while collaborating with React teams Most of my advanced React
                 experience comes from production-grade personal projects.
             </p>
         </section>

@@ -75,7 +75,7 @@ export default function Projects() {
           github="https://github.com/yourusername/yt-player"
           highlights={[
             "Persistent playback time & volume across sessions",
-            "Playlist state synchronized across components",
+            "Playlist state management synchronized across components",
           ]}
           stack={["Next.js", "React", "SCSS", "YouTube API"]}
         />
