@@ -30,7 +30,7 @@ export const metadata = {
     siteName: "Venkat Yashwanth Portfolio",
     images: [
       {
-        url: "/og-image.svg",
+        url: "https://resume-mvyashwanth92.netlify.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Venkat Yashwanth Portfolio",
