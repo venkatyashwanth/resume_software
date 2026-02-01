@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://resume-mvyashwanth92.netlify.app"),
   title: "Venkat Yashwanth | Frontend Developer",
   description: "Frontend Developer | React | Next.js",
   icons: {
@@ -21,6 +22,10 @@ export const metadata = {
         type: "image/svg+xml",
       }
     ]
+  },
+   robots: {
+    index: true,
+    follow: true,
   },
   openGraph: {
     title: "Venkat Yashwanth | Frontend Developer",
