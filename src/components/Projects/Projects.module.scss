@@ -27,6 +27,7 @@
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
 
   h3 {
@@ -42,11 +43,9 @@
 /* Featured project */
 .featured {
   border-color: #60a5fa;
-  background: linear-gradient(
-    180deg,
-    rgba(96, 165, 250, 0.08),
-    rgba(15, 23, 42, 1)
-  );
+  background: linear-gradient(180deg,
+      rgba(96, 165, 250, 0.08),
+      rgba(15, 23, 42, 1));
 }
 
 .featuredBadge {
@@ -113,6 +112,126 @@
     transform: scale(1.1);
   }
 }
+
+.modalOverlay {
+  /* Project Modal Variables */
+  $modal-max-width: 700px;
+  $modal-max-height: 85vh;
+
+  $modal-padding: 40px;
+  $modal-section-gap: 16px;
+  $modal-title-size: 24px;
+  $modal-subtitle-gap: 8px;
+  $modal-image-gap: 20px;
+
+  $title-font: 18px;
+  $title-space: 8px;
+
+  $tech-badge-padding-y: 5px;
+  $tech-badge-padding-x: 10px;
+  $tech-space: 8px;
+  $tech-badge-font: 13px;
+
+  $modal-button-padding-y: 10px;
+  $modal-button-padding-x: 16px;
+
+  $close-btn-size: 20px;
+  $close-btn-offset: 16px;
+  $radius-lg: 8px;
+
+
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modalContent {
+    position: relative;
+    background: #121218;
+    border-radius: $radius-lg;
+    max-width: $modal-max-width;
+    width: 90%;
+    padding: $modal-padding;
+    color: #fff;
+    overflow-y: auto;
+    max-height: $modal-max-height;
+    animation: modalFade 0.3s ease;
+  }
+
+  .modalSection {
+    margin-top: $modal-section-gap;
+
+    h3 {
+      margin-bottom: $title-space;
+      font-size: $title-font;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+  }
+
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $tech-space;
+
+    span {
+      padding: $tech-badge-padding-y $tech-badge-padding-x;
+      background: #1f1f2a;
+      border-radius: $radius-lg;
+      font-size: $tech-badge-font;
+    }
+  }
+
+  .modalTitle {
+    font-size: $modal-title-size;
+    font-weight: 700;
+  }
+
+  .modalSubtitle {
+    margin-top: $modal-subtitle-gap;
+    color: #a5a5a5;
+  }
+
+  .modalImage {
+    margin-top: $modal-image-gap;
+    width: 100%;
+    border-radius: $radius-lg;
+    border: 1px solid #2a2a35;
+  }
+
+  .modalButtons {
+    margin-top: 30px;
+    display: flex;
+    gap: $modal-section-gap;
+
+    a {
+      padding: $modal-button-padding-y $modal-button-padding-x;
+      background: #6c63ff;
+      border-radius: $radius-lg;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: $close-btn-offset;
+    right: $close-btn-offset;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: $close-btn-size;
+    cursor: pointer;
+  }
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {

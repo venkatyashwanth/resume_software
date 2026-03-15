@@ -1,21 +1,44 @@
+"use client";
+import {Typewriter} from "react-simple-typewriter";
 import styles from "./Hero.module.scss";
+
+
+const techStack = [
+    "React",
+    "Next.js",
+    "Redux",
+    "Firebase",
+    "JavaScript"
+];
 
 export default function Hero() {
     return (
         <section className={styles.hero}>
             <div className="container">
-                <h1>
+                <h1 className={styles.title}>
                     Hi, I’m <span>Venkat Yashwanth</span> 👋
                 </h1>
-
-                <p className={styles.role}>
-                    Frontend Developer specializing in React, Next.js and modern JavaScript.
-                </p>
+                <h2 className={styles.typing}>
+                    <Typewriter
+                        words={
+                            [
+                                "Frontend Developer",
+                                "React Developer",
+                                "Next.js Developer",
+                                "UI Engineer"
+                            ]
+                        }
+                        loop={true}
+                        cursor
+                        cursorStyle="|"
+                        typeSpeed={70}
+                        deleteSpeed={40}
+                        delaySpeed={1500}
+                    />
+                </h2>
 
                 <p className={styles.desc}>
-                    Building <strong>accessible</strong>, <strong>scalable</strong>, and
-                    <strong>production-ready</strong> user interfaces
-                    for media and content-driven web applications.
+                    Building scalable UI and modern web applications with <strong>4+</strong> years of experience. Worked on enterprise platforms including Sony Pictures Network and MoneyControl.
                 </p>
 
                 {/* Featured Project CTA */}
@@ -25,7 +48,7 @@ export default function Hero() {
                         href="#projects"
                         className={styles.featuredLink}
                     >
-                        Advanced YouTube Playlist Player →
+                        ShopSphere Ecommerce →
                     </a>
                 </div>
 
@@ -37,6 +60,14 @@ export default function Hero() {
                         Download Resume
                     </a>
                 </div>
+
+                <ul className={styles.techBadges}>
+                    {techStack.map((tech) => (
+                        <span key={tech} className={styles.techBadge}>
+                            {tech}
+                        </span>
+                    ))}
+                </ul>
             </div>
         </section>
     );

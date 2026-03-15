@@ -32,6 +32,29 @@ a {
     text-decoration: none;
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2f2f3a #0f0f14;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0f14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f2f3a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
